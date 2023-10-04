@@ -1,0 +1,182 @@
+*{
+    font-family: Inter;
+    overflow-x: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+
+/* Title styling */
+#title{
+    /* gradient */
+    color: #8019E8, #8019E800;
+    background: linear-gradient(180deg, #8019E8 0%, rgba(128, 25, 232, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* postitioning and size */
+    text-align: center;
+    font-size: 29vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3vh;
+}
+
+
+/* Background styling */
+body {
+    background-color: #121212;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+   }
+
+/* tagline styling */
+#tagline{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.7vh;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* button styling */
+button{
+    display: block;
+    border-radius: 1.4vh;
+    background: #8019E8;
+    margin: auto;
+
+    width: 14.4vh;
+    height: 3.8vh;
+    color: #FFFFFF;
+    border: none;
+    opacity: 75%;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+/* scroll hint styling */
+#scroll{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.44vh;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.4;
+    margin-top: 28vh;
+}
+
+
+
+/* Our work styling */
+
+#flowmodoro{
+    margin-top: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200vh;
+    color: #FFFFFF;
+}
+
+#flowmodoro img{
+    opacity: 75%;
+    width: 107vh;
+    height: 66.5vh;
+}
+
+#flowmodoro #backdrop img:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#flowmodoro h1, #flowmodoro p{
+    position: absolute;
+    display: none;
+    margin-left: 5vw;
+}
+
+#flowmodoro p{
+    margin-top: 10vh;
+    width: 35vw;
+}
+
+#flowmodoro h1{
+    font-size: 5vh;
+}
+
+#backdrop{
+    background-color: black;
+    position: absolute;
+    width: 107vh;
+    height: 66.5vh;
+    z-index: -1;
+    display: inline;
+}
+
+
+/* Socials styling */
+
+#socials{
+    position: fixed;
+    top: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 3vw;
+}
+
+#socials img{
+    margin:7px;
+}
+
+#socials #instagram{
+    width: 30px;
+    height: 30px;
+}
+
+#socials #x{
+    width: 18px;
+    height: 20px;
+}
+
+#socials #linkedIn{
+    width: 18px;
+    height: 18px;
+}
+
+#socials:hover{
+    top: 70vh;
+}
+
+#socials #instagram:hover{
+    width: 49px;
+    height: 49px;
+}
+
+#socials #x:hover{
+    width: 30px;
+    height: 33px;
+}
+
+#socials #linkedIn:hover{
+    width: 29px;
+    height: 29px;
+}
+
+#socials .icon:hover{
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
