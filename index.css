@@ -81,8 +81,11 @@ button:hover{
 
 /* Our work styling */
 
-#flowmodoro{
+#ourWork{
     margin-top: 40vh;
+}
+
+#flowmodoro{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,41 +93,59 @@ button:hover{
     color: #FFFFFF;
 }
 
-#flowmodoro img{
-    opacity: 75%;
-    width: 107vh;
-    height: 66.5vh;
+
+#flowmodoroBorder{
+    width: 67vw;
+    height: 67vh;
+    flex-shrink: 0;
+    border: 0px solid #8119e88f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
 }
 
-#flowmodoro #backdrop img:hover{
-    opacity: 100%;
+
+#flowmodoro img{
+    height: 67vh;
+    opacity: 0.75;
+}
+
+#flowmodoro img:hover{
     cursor: pointer;
+    opacity: 1;
 }
 
 #flowmodoro h1, #flowmodoro p{
-    position: absolute;
     display: none;
-    margin-left: 5vw;
 }
 
 #flowmodoro p{
-    margin-top: 10vh;
-    width: 35vw;
+    width: 25vw;
+    height: 38.2vh;
+    font-size: 1.9vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
 }
+
 
 #flowmodoro h1{
-    font-size: 5vh;
+    width: 25vw;
+    height: 4.9vh;
+    font-size: 3.8vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-#backdrop{
-    background-color: black;
-    position: absolute;
-    width: 107vh;
-    height: 66.5vh;
-    z-index: -1;
-    display: inline;
+#flowmodoro span{
+    margin-top: 5vh;
 }
-
 
 /* Socials styling */
 
@@ -180,3 +201,41 @@ button:hover{
     cursor: pointer;
     filter: brightness(0) invert(1);
 }
+
+/* Navbar styling */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    float: right;
+    margin-right: 3vw;
+    margin-top: 1vh;
+    opacity: 0.5;
+}
+
+nav a:hover{
+    opacity: 1;
+}
+
+nav p{
+    display: inline;
+    font-weight: 500;
+    font-size: 30px;
+    background: linear-gradient(179deg, #8019E8 0.96%, rgba(128, 25, 232, 0.00) 111.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    line-height: normal;
+    }
+
