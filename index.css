@@ -86,16 +86,16 @@ button:hover{
     margin-top: 40vh;
 }
 
-#flowmodoro{
+.workSection{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200vh;
+    margin-bottom: 40vh;
     color: #FFFFFF;
 }
 
 
-#flowmodoroBorder{
+.workBorder{
     width: 67vw;
     height: 67vh;
     flex-shrink: 0;
@@ -109,22 +109,21 @@ button:hover{
 
 }
 
-
-#flowmodoro img{
+.workSection img{
     height: 67vh;
     opacity: 0.75;
 }
 
-#flowmodoro img:hover{
+.workSection img:hover{
     cursor: pointer;
     opacity: 1;
 }
 
-#flowmodoro h1, #flowmodoro p{
+.workSection h1, .workSection p{
     display: none;
 }
 
-#flowmodoro p{
+.workSection p{
     width: 25vw;
     height: 38.2vh;
     font-size: 1.9vh;
@@ -135,7 +134,7 @@ button:hover{
 }
 
 
-#flowmodoro h1{
+.workSection h1{
     width: 25vw;
     height: 4.9vh;
     font-size: 3.8vh;
@@ -144,9 +143,10 @@ button:hover{
     line-height: normal;
 }
 
-#flowmodoro span{
+.workSection span{
     margin-top: 5vh;
 }
+
 
 /* Socials styling */
 

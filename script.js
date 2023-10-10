@@ -1,6 +1,6 @@
 
-
-function openModule(id){
+// Opens the modals in the work section
+function openModal(id){
     document.getElementById(id + 'img').style.height = "20vh";
     document.getElementById(id + 'img').style.width = "32vh";
     document.getElementById(id + 'img').style.marginTop = "8.2vh";
@@ -15,6 +15,7 @@ function openModule(id){
 
 
 
+// Typewriting effect for the title
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -71,5 +72,4 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #8119e878}";
     document.body.appendChild(css);
 };
-
 
