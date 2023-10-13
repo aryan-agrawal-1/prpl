@@ -1,16 +1,15 @@
 
 // Opens the modals in the work section
+
 function openModal(id){
-    document.getElementById(id + 'img').style.height = "20vh";
-    document.getElementById(id + 'img').style.width = "32vh";
-    document.getElementById(id + 'img').style.marginTop = "8.2vh";
-    document.getElementById(id + 'img').style.opacity = "1";
+    document.getElementById(id + 'img').style.display = "none";
     document.getElementById(id).style.display = "block";
     document.getElementById(id + "p").style.display = "block";
     document.getElementById(id + "heading").style.display = "block";
     document.getElementById(id + "Border").style.borderRadius = "3.8vh";
     document.getElementById(id + "Border").style.borderWidth = "5px 5px 5px 5px";
     window.location.href = "#" + id;
+    document.getElementById(id + 'imgSmall').style.display = "inline";
 }
 
 
@@ -73,3 +72,20 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+
+
+// Animate Work Section on scroll
+
+const observer = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+        // if the element is visible
+        if(entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add('transition');
+        }
+    });
+});
+
+observer.observe(document.querySelector('#flowmodoroBorder'));
+observer.observe(document.querySelector('#TwoBorder'));

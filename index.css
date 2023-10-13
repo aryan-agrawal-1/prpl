@@ -97,7 +97,7 @@ button:hover{
 
 .workBorder{
     width: 67vw;
-    height: 67vh;
+    height: 68vh;
     flex-shrink: 0;
     border: 0px solid #8119e88f;
     margin-left: auto;
@@ -109,14 +109,25 @@ button:hover{
 
 }
 
-.workSection img{
+.imgBig{
     height: 67vh;
-    opacity: 0.75;
 }
 
-.workSection img:hover{
+.imgBig:hover{
     cursor: pointer;
-    opacity: 1;
+    height: 68vh;
+}
+
+.imgSmall{
+    display: none;
+    margin-top: 8.2vh;
+    width: 32vh;
+    height: 20vh;
+}
+
+
+.imgSmall::after{
+    box-shadow: -15px 20px 15px 1px #8019E8;
 }
 
 .workSection h1, .workSection p{
@@ -131,6 +142,20 @@ button:hover{
     font-weight: 700;
     line-height: normal;
     text-align: justify;
+}
+
+.workBorder{
+    transform: rotate3d(0, 1, 0, 90deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .workBorder{
+        transition: all 1s ease;
+    }
+}
+
+.transition{
+    transform: rotate3d(0,0,0,0deg) !important;
 }
 
 
