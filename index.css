@@ -2,8 +2,15 @@
     font-family: Inter;
     overflow-x: hidden;
     transition: ease-in-out 0.3s;
+    color: #fff;
+    /* padding: 0;
+    /* margin: 0;
+    /* May be worth adding these so we have full control */
 }
 
+a {
+    text-decoration: none;
+}
 
 /* Title styling */
 #title{
@@ -265,3 +272,45 @@ nav p{
     line-height: normal;
     }
 
+
+/* Contact us styling */
+#contact-us {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us > h3 {
+    font-size: 2.5vh;
+}
+
+#our-images {
+    display: flex;
+    gap: 10vw;
+    margin-top: 5vh;
+}
+
+#our-images img{
+    border-radius: 50%;
+}
+
+#contact-buttons {
+    display: flex;
+    gap: 2vw;
+}
+
+#contact-buttons button {
+    height: 5vh;
+    font-size: 2.5vh;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+}
+
+#contact-socials {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
