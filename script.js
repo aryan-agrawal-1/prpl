@@ -10,6 +10,7 @@ function openModal(id){
     document.getElementById(id + "Border").style.borderWidth = "5px 5px 5px 5px";
     window.location.href = "#" + id;
     document.getElementById(id + 'imgSmall').style.display = "inline";
+    document.getElementById(id + 'visit').style.display = "inline";
 }
 
 

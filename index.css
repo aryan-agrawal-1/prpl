@@ -4,6 +4,10 @@
     transition: ease-in-out 0.3s;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 /* Title styling */
 #title{
@@ -126,9 +130,6 @@ button:hover{
 }
 
 
-.imgSmall::after{
-    box-shadow: -15px 20px 15px 1px #8019E8;
-}
 
 .workSection h1, .workSection p{
     display: none;
@@ -172,6 +173,22 @@ button:hover{
     margin-top: 5vh;
 }
 
+#images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visit{
+    display: none;
+    height: 25vh;
+    margin-top: 5vh;
+}
+
+.visit:hover{
+    height: 27vh;
+    margin-top: 4vh;
+}
 
 /* Socials styling */
 
