@@ -327,6 +327,31 @@ nav p{
 
 #our-images img{
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#our-images p{
+    width: 15vw;
+    color: #ffffffc4;
+    text-align: justify;
+}
+
+#our-images h2{
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(180deg, #8019E8 0%, rgba(128, 25, 232, 0.00) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#img1, #img2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact-buttons {
