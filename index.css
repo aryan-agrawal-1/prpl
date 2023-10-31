@@ -356,7 +356,7 @@ nav p{
 footer{
     height: 25vh;
     width: 110vw;
-    border-top: #FFFFFF 1px solid;
+    border-top: #ffffff7a 1px solid;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
