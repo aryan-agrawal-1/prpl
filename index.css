@@ -402,3 +402,54 @@ footer{
 footer p{
     color: #ffffff7a
 }
+
+/* About us section */
+
+#about-us {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-us > h1 {
+    font-size: 10vh;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10vh;
+    height: 25vh;
+}
+
+.what-we-do {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 0vh 20vw 0vh 20vw;
+    align-items: center;
+    text-align: left;
+    gap: 5vw;
+}
+
+.what-we-do > p {
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+.what-we-do > img {
+    scale: 0.5;
+    filter: brightness(0) invert(1);
+    margin-left: 10vw;
+}
+
+#design-icon {
+    scale: 1;
+    margin-left: 0;
+    margin-right: 10vw;
+}
+
+#what-we-do-2 {
+    flex-direction: row-reverse;
+}
