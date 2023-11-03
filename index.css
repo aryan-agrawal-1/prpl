@@ -334,7 +334,7 @@ nav p{
 #our-images p{
     width: 15vw;
     color: #ffffffc4;
-    text-align: justify;
+    text-align: center;
 }
 
 #our-images h2{
@@ -343,7 +343,7 @@ nav p{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    background: linear-gradient(180deg, #8019E8 0%, rgba(128, 25, 232, 0.00) 100%);
+    background: #8019E8;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
