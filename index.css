@@ -16,6 +16,7 @@ a {
     text-decoration: none;
 }
 
+
 /* Title styling */
 #title{
     /* gradient */
@@ -452,4 +453,9 @@ footer p{
 
 #what-we-do-2 {
     flex-direction: row-reverse;
+}
+
+b{
+    font-style: italic;
+    font-size: 2vh;
 }
