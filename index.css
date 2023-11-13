@@ -14,13 +14,26 @@ html{
 
 a {
     text-decoration: none;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.button:hover, a:hover {
+    scale: 1.2;
+}
+
+.button:active, a:active {
+    scale: 1;
+}
+
+#hero-box {
+    height: 100vh;
 }
 
 /* Title styling */
 #title{
     /* gradient */
-    color: #8019E8, #8019E800;
-    background: linear-gradient(180deg, #8019E8 0%, rgba(128, 25, 232, 0.00) 100%);
+    background: #8019E8;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,7 +44,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -54,26 +67,39 @@ body {
     font-style: italic;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 5vh;
 }
 
 /* button styling */
-button{
-    display: block;
-    border-radius: 1.4vh;
+.button {
+    width: 14.8vw;
+    height: 6.56vh;
+    border-radius: 2.12vh;
     background: #8019E8;
-    margin: auto;
-
-    width: 14.4vh;
-    height: 3.8vh;
-    color: #FFFFFF;
-    border: none;
-    opacity: 75%;
-}
-
-button:hover{
+    border: transparent 0px solid;
+    font-size: 3.17vh;
+    font-weight: 600;
+    line-height: 3.8vh;
+    color: #fff;
     cursor: pointer;
-    opacity: 100%;
+    display: block;
+    margin: auto;
+    transition: 0.3s all ease-in-out;
 }
+
+.button:active, a:active {
+    scale: 1;
+
+}
+
+.button:hover {
+    box-shadow: #fff 0 0 20px 3px;
+}
+
+.button:active {
+    box-shadow: none;
+}
+
 
 
 /* scroll hint styling */
@@ -81,12 +107,14 @@ button:hover{
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 1.44vh;
+    font-size: 2vh;
     font-style: italic;
     font-weight: 500;
     line-height: normal;
-    opacity: 0.4;
+    opacity: 0.8;
     margin-top: 28vh;
+    position: relative;
+    bottom: 12vh;
 }
 
 
@@ -267,15 +295,16 @@ button:hover{
 /* Navbar styling */
 nav{
     position: fixed;
-    top: 0;
+    top: 2vh;
     width: 100%;
+    height: 7vh;
     z-index: 100;
 }
 
 nav a{
     color: #FFF;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -293,13 +322,14 @@ nav a:hover{
 nav p{
     display: inline;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 4.5vh;
     background: linear-gradient(179deg, #8019E8 0.96%, rgba(128, 25, 232, 0.00) 111.32%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: normal;
     line-height: normal;
+    margin-left: 1vw;
     }
 
 
@@ -356,14 +386,18 @@ nav p{
 
 #contact-buttons {
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 #contact-buttons button {
     height: 5vh;
-    font-size: 2.5vh;
+    width: 10vw;
+    font-size: 2.3vh;
     margin-bottom: 4vh;
     margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact-socials {
