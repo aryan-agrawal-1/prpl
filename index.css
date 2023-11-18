@@ -412,32 +412,6 @@ nav p{
 }
 
 
-/* footer styling */
-footer{
-    height: 25vh;
-    width: 110vw;
-    border-top: #ffffff7a 1px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#footerHeading{
-    font-family: Inter;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background: linear-gradient(180deg, #8019E8 0%, rgba(128, 25, 232, 0.00) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-footer p{
-    color: #ffffff7a
-}
-
 /* About us section */
 
 #about-us {
