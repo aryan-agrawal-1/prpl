@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>PRPL Design | Welcome to the Internet</title>
+</head>
+<body>
+    <nav>
+        <p>prpl</p>
+        <a href="#contact-us">Contact Us</a>
+        <a href="#about-us">About Us</a>
+        <a href="#ourWork">Our Work</a>
+    </nav>
+
+    <section id="hero-box">
+        <h1 id="title" class="typewrite" data-period="5000" data-type='[ "prpl", "prpl.design", "design", ":)", "prpl.design", "innovate", "Be BOLD", "Be YOU"]'></h1>
+        <p id="tagline">It's time for the next level</p>
+        <a href="#contact-us"><button class="button">Level Up!</button></a>
+        <p id="scroll">Scroll to see our work</p>
+    </section>
+
+    <main id="ourWork">
+
+    <!-- M-coach div -->
+
+    <div id="mcoach" class="workSection">
+        <div id="mcoachBorder" class="workBorder">
+            <img class="imgBig" id="mcoachimg" src="Images/flowmodoro.png" onclick="openModal('mcoach')">
+            <div id="images">
+                <img class="imgSmall" id="mcoachimgSmall" src="Images/flowmodoro.png">
+                <a href="https://www.m-coach.co.uk/"><img class="visit" id="mcoachvisit" src="Images/visit_web.png"></a>
+            </div>
+            <span>
+                <h1 id="mcoachheading">M-coach</h1>
+                <p id="mcoachp">We designed a website that highlights Mark's expertise and experience and to move potential clients into his inbox. <br><br><br><br>We worked alongside Mark to create a site which fitted his personality and told his own story.<br><br><br><br> This site was completely designed by us in collaboration with mark. We also carried out the implementation of this site.</p>
+            </span>
+            <span id="mcoachClose" class="material-symbols-outlined close" onclick="closeModal('mcoach')">close</span>
+        </div>
+    </div> 
+
+    <!-- Flomodoro Div -->
+
+    <div id="flowmodoro" class="workSection">
+        <div id="flowmodoroBorder" class="workBorder">
+            <img class="imgBig" id="flowmodoroimg" src="Images/flowmodoro.png" onclick="openModal('flowmodoro')">
+            <div id="images">
+                <img class="imgSmall" id="flowmodoroimgSmall" src="Images/flowmodoro.png">
+                <a href="www.flowmodoro.com"><img class="visit" id="flowmodorovisit" src="Images/visit_web.png"></a>
+            </div>
+            <span>
+                <h1 id="flowmodoroheading">Flowmodoro</h1>
+                <p id="flowmodorop">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore aliquid error nesciunt reiciendis! Vel ut nulla beatae voluptas voluptatum, dolores consequuntur vero ratione aperiam eaque maxime ipsum aut saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore aliquid error nesciunt reiciendis! Vel ut nulla beatae voluptas voluptatum, dolores consequuntur vero ratione aperiam eaque maxime ipsum aut saepe. </p>
+            </span>
+            <span id="flowmodoroClose" class="material-symbols-outlined close" onclick="closeModal('flowmodoro')">close</span>
+        </div>
+    </div>
+
+    </main>
+
+    <section id="about-us">
+        <h1>What do we do?</h1>
+        <div class="what-we-do">
+            <img src="./Images/design-icon.png" id="design-icon">
+            <p>We're all about creating a website for <b>You</b>. We're crafting an online personality that's as cool and unique as your business. Get ready to stand out like never before!</p>
+        </div>
+        <div class="what-we-do" id="what-we-do-2">
+            <img src="./Images/coding-icon.webp">
+            <p>Once the design phase is a wrap, we're kicking it into high gear to breathe life into that vision.  It's not just a website; it's your brand, and we're making it impossible to ignore!</p>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h3><i>Book a call, send a DM, or even just an email!</i></h3>
+        <div id="contact-buttons">
+            <a href="https://calendly.com/robert-mc-miller/prpl-design-introduction" target="_blank"><button class="button">Call</button></a> <!--CREATE CALENDLY-->
+            <a href = "mailto: abc@example.com"><button class="button">Email</button></a> <!-- CHANGE EMAIL-->
+        </div>
+        <div id="contact-socials">
+            <a href="https://www.instagram.com/prpl_web_design/"><img id="instagram" class="icon" src="Images/instagram.png"></a>
+            <a href="https://twitter.com/prpldesign"><img id="x" class="icon" src="Images/x.png"></a>
+            <a href="https://www.linkedin.com/company/prpl-web-design/"><img id="linkedIn" class="icon" src="Images/linkedIn.png"></a>
+        </div>
+
+        <div id="our-images">
+            <div id="img1">
+                <img src="./Images/robert-profile.jpeg">
+                <h2>Robert Miller</h2>
+                <p>Pursuing an <b>MEng in Computer Science at Durham University</b>. With over <b>four years of web design experience</b> and almost <b>seven years of programming expertise</b>, I'm eager to create distinctive and captivating digital experiences that <b>set your brand apart.</b></p>
+            </div>
+            <div id="img2">
+                <img src="./Images/aryan-profile.png">
+                <h2>Aryan Agrawal</h2>
+                <p>Working towards an <b>MSci in Computer Science at Glasgow University</b>. Over the past <b>3 years, I've immersed myself in freelance graphic design and video editing.</b> I gained valuable connections in the <b>Web3 space</b>, through <b>my work at SuperPotion </b>Striving to bring <b>your website into the future.</b></p>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="socials">
+        <a href="https://www.instagram.com/prpl_web_design/"><img id="instagram" class="icon" src="Images/instagram.png"></a>
+        <a href="https://twitter.com/prpldesign"><img id="x" class="icon" src="Images/x.png"></a>
+        <a href="https://www.linkedin.com/company/prpl-web-design/"><img id="linkedIn" class="icon" src="Images/linkedIn.png"></a>
+        <img id="line" src="Images/line.png">
+    </div>
+
+
+</body>
+</html>
