@@ -165,6 +165,10 @@ body {
     height: 20vh;
 }
 
+#images{
+    height: 100%;
+}
+
 
 
 .workSection h1, .workSection p{
@@ -231,6 +235,7 @@ body {
 .close{
     visibility: hidden;
     opacity: 0.4;
+    height: 50%;
 }
 
 .close:hover{
