@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* styling for the tagline page */
 
 body{
@@ -6,19 +7,504 @@ body{
     height: 97vh;
     align-items: center;
     justify-content: center;
+=======
+*{
+    font-family: Inter;
+    overflow-x: hidden;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    overflow-y: hidden;
+    /* padding: 0;
+    /* margin: 0;
+    /* May be worth adding these so we have full control */
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.button:hover, a:hover {
+    scale: 1.2;
+}
+
+.button:active, a:active {
+    scale: 1;
+}
+
+#hero-box {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+
+/* Title styling */
+#title{
+    /* gradient */
+    background: #8019E8;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* postitioning and size */
+    text-align: center;
+    font-size: 29vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5vh;
+}
+
+
+
+/* Background styling */
+body {
+    background-color: #121212;
+    background-image: url("images/background.png");
+>>>>>>> Stashed changes
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     background-attachment: fixed;
 }
 
+<<<<<<< Updated upstream
 h1{
     background: linear-gradient(180deg, #8019E8 0%, #121212 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+=======
+/* button styling */
+.button {
+    width: 14.8vw;
+    height: 6.56vh;
+    border-radius: 2.12vh;
+    background: #8019E8;
+    border: transparent 0px solid;
+    font-size: 3.17vh;
+    font-weight: 600;
+    line-height: 3.8vh;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: 0.3s all ease-in-out;
+}
+
+.button:active, a:active {
+    scale: 1;
+
+}
+
+.button:hover {
+    box-shadow: #fff 0 0 20px 3px;
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+
+
+/* scroll hint styling */
+#scroll{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2vh;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.8;
+    margin-top: 28vh;
+    position: relative;
+    bottom: 12vh;
+}
+
+
+
+/* Our work styling */
+
+#ourWork{
+    margin-top: 20vh;
+    scroll-snap-align: start;
+}
+
+.workSection{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40vh;
+    color: #FFFFFF;
+}
+
+
+.workBorder{
+    width: 67vw;
+    height: 68vh;
+    flex-shrink: 0;
+    border: 0px solid #8119e88f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+.imgBig{
+    height: 67vh;
+}
+
+.imgBig:hover{
+    cursor: pointer;
+    height: 68vh;
+}
+
+.imgSmall{
+    display: none;
+    margin-top: 8.2vh;
+    width: 32vh;
+    height: 20vh;
+}
+
+
+
+.workSection h1, .workSection p{
+    display: none;
+}
+
+.workSection p{
+    width: 25vw;
+    height: 38.2vh;
+    font-size: 1.9vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
+}
+
+.workBorder{
+    transform: rotate3d(0, 1, 0, 90deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .workBorder{
+        transition: all 0.3s ease;
+    }
+}
+
+.transition{
+    transform: rotate3d(0,0,0,0deg) !important;
+}
+
+
+.workSection h1{
+    width: 25vw;
+    height: 4.9vh;
+    font-size: 3.8vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.workSection span{
+    margin-top: 5vh;
+}
+
+#images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visit{
+    display: none;
+    height: 25vh;
+    margin-top: 5vh;
+    opacity: 0.5;
+}
+
+.visit:hover{
+    height: 27vh;
+    margin-top: 4vh;
+    opacity: 075;
+}
+
+.close{
+    visibility: hidden;
+    opacity: 0.4;
+}
+
+.close:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Socials styling */
+
+#socials{
+    position: fixed;
+    top: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 3vw;
+}
+
+#socials img{
+    margin:7px;
+}
+
+#socials #instagram{
+    width: 30px;
+    height: 30px;
+}
+
+#socials #x{
+    width: 18px;
+    height: 20px;
+}
+
+#socials #linkedIn{
+    width: 18px;
+    height: 18px;
+}
+
+#socials:hover{
+    top: 70vh;
+}
+
+#socials #instagram:hover{
+    width: 49px;
+    height: 49px;
+}
+
+#socials #x:hover{
+    width: 30px;
+    height: 33px;
+}
+
+#socials #linkedIn:hover{
+    width: 29px;
+    height: 29px;
+}
+
+#socials .icon:hover{
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+/* Navbar styling */
+nav{
+    position: fixed;
+    top: 2vh;
+    width: 100%;
+    height: 7vh;
+    z-index: 100;
+}
+
+nav a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2.5vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    float: right;
+    margin-right: 3vw;
+    margin-top: 1vh;
+    opacity: 0.5;
+}
+
+nav a:hover{
+    opacity: 1;
+}
+
+nav p{
+    display: inline;
+    font-weight: 500;
+    font-size: 4.5vh;
+    background: linear-gradient(179deg, #8019E8 0.96%, rgba(128, 25, 232, 0.00) 111.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 1vw;
+    }
+
+
+/* Contact us styling */
+#contact-us {
+    scroll-snap-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us > h3 {
+    font-size: 2.5vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#our-images {
+    display: flex;
+    gap: 10vw;
+    margin-top: 5vh;
+}
+
+#our-images img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#our-images p{
+    width: 15vw;
+    color: #ffffffc4;
+    text-align: center;
+}
+
+#our-images h2{
+>>>>>>> Stashed changes
     font-family: Inter;
     font-size: 220px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+<<<<<<< Updated upstream
 }
+=======
+    background: #8019E8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#img1, #img2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-buttons {
+    display: flex;
+    gap: 4vw;
+}
+
+#contact-buttons button {
+    height: 5vh;
+    width: 10vw;
+    font-size: 2.3vh;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-socials {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+#contact-socials > a:hover{
+    filter: brightness(1.5);
+}
+
+
+/* footer styling */
+footer{
+    height: 25vh;
+    width: 110vw;
+    border-top: #ffffff7a 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerHeading{
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(180deg, #8019E8 0%, rgba(128, 25, 232, 0.00) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer p{
+    color: #ffffff7a
+}
+
+/* About us section */
+
+#about-us {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-us > h1 {
+    font-size: 10vh;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10vh;
+    height: 25vh;
+}
+
+.what-we-do {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 0vh 20vw 0vh 20vw;
+    align-items: center;
+    text-align: left;
+    gap: 5vw;
+}
+
+.what-we-do > p {
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+.what-we-do > img {
+    scale: 0.5;
+    filter: brightness(0) invert(1);
+    margin-left: 10vw;
+}
+
+#design-icon {
+    scale: 1;
+    margin-left: 0;
+    margin-right: 10vw;
+}
+
+#what-we-do-2 {
+    flex-direction: row-reverse;
+}
+>>>>>>> Stashed changes
