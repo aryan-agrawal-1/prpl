@@ -3,6 +3,7 @@
     overflow-x: hidden;
     transition: ease-in-out 0.3s;
     color: #fff;
+    overflow-y: hidden;
     /* padding: 0;
     /* margin: 0;
     /* May be worth adding these so we have full control */
@@ -10,6 +11,8 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 a {
@@ -28,6 +31,7 @@ a {
 
 #hero-box {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 
@@ -124,6 +128,7 @@ body {
 
 #ourWork{
     margin-top: 40vh;
+    scroll-snap-align: start;
 }
 
 .workSection{
@@ -132,6 +137,7 @@ body {
     justify-content: center;
     margin-bottom: 40vh;
     color: #FFFFFF;
+    scroll-snap-align: start;
 }
 
 
@@ -347,6 +353,7 @@ nav p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: center;
 }
 
 #contact-us > h3 {
@@ -406,10 +413,21 @@ nav p{
     justify-content: center;
 }
 
+#contact-buttons button:hover {
+    scale: 1.02;
+    box-shadow: #fff 0 0 8px 2px;
+}
+
+#contact-buttons a {
+    width: 15vw;
+}
+
 #contact-socials {
     display: flex;
     align-items: center;
     gap: 3vw;
+    width: 70vw;
+    justify-content: center;
 }
 
 #contact-socials > a:hover{
@@ -425,6 +443,7 @@ nav p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 #about-us > h1 {
