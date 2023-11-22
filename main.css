@@ -45,7 +45,7 @@ a {
 
     /* postitioning and size */
     text-align: center;
-    font-size: 29vh;
+    font-size: 18.12vw;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -151,7 +151,7 @@ body {
     margin-top: 10vh;
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
@@ -182,6 +182,7 @@ body {
 }
 
 .workSection p{
+    margin-top: 12vh;
     width: 25vw;
     height: 38.2vh;
     font-size: 1.9vh;
@@ -241,7 +242,7 @@ body {
 .close{
     visibility: hidden;
     opacity: 0.4;
-    height: 50%;
+    height: 5%;
 }
 
 .close:hover{
@@ -258,7 +259,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 3vw;
+    width: 10vw;
 }
 
 #socials img{
@@ -280,28 +281,23 @@ body {
     height: 18px;
 }
 
-#socials:hover{
-    top: 70vh;
-}
-
-#socials #instagram:hover{
-    width: 49px;
-    height: 49px;
-}
-
-#socials #x:hover{
-    width: 30px;
-    height: 33px;
-}
-
-#socials #linkedIn:hover{
-    width: 29px;
-    height: 29px;
-}
-
 #socials .icon:hover{
     cursor: pointer;
     filter: brightness(0) invert(1);
+}
+
+#socials p{
+    display: none;
+}
+
+#socials a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#socials a:hover ~ #socials p{
+    display: block;
 }
 
 /* Navbar styling */
