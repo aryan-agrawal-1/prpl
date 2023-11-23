@@ -9,7 +9,7 @@ function openModal(id){
     document.getElementById(id + "Border").style.borderRadius = "3.8vh";
     document.getElementById(id + "Border").style.borderWidth = "5px 5px 5px 5px";
     document.getElementById(id + "Border").style.justifyContent = "space-evenly";
-    document.getElementById(id + "Border").style.width = "67vw";
+    document.getElementById(id + "Border").style.width = "68vw";
     window.location.href = "#" + id;
     document.getElementById(id + 'imgSmall').style.display = "inline";
     document.getElementById(id + 'visit').style.display = "inline";
