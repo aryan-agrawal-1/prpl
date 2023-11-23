@@ -263,7 +263,7 @@ body {
 }
 
 #socials img{
-    margin:7px;
+    margin: 7px;
 }
 
 #socials #instagram{
@@ -286,8 +286,9 @@ body {
     filter: brightness(0) invert(1);
 }
 
-#socials p{
-    display: none;
+#socials a p{
+    font-size: 0vw;
+    transition: ease-in-out 0.3s;
 }
 
 #socials a{
@@ -296,9 +297,7 @@ body {
     align-items: center;
 }
 
-#socials a:hover ~ #socials p{
-    display: block;
-}
+
 
 /* Navbar styling */
 nav{

@@ -94,6 +94,17 @@ window.onload = function() {
 };
 
 
+// show social links
+
+function show(id){
+    document.getElementById(id).style.fontSize = "0.8vw";
+};
+
+function hide(id){
+    document.getElementById(id).style.fontSize = "0vw";
+};
+
+
 
 // Animate Work Section on scroll
 
@@ -110,3 +121,5 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('#flowmodoroBorder'));
 observer.observe(document.querySelector('#mcoachBorder'));
+
+
