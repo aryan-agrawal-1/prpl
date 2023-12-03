@@ -361,6 +361,7 @@ nav img{
     align-items: center;
     justify-content: center;
     scroll-snap-align: center;
+    margin-top: 20vh;
 }
 
 #contact-us > h3 {
