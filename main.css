@@ -217,7 +217,7 @@ body {
 
 
 .workSection h1{
-    width: 25vw;
+    width: 50vw;
     height: 4.9vh;
     font-size: 3.8vh;
     font-style: normal;
@@ -476,24 +476,58 @@ nav img{
 
 .what-we-do img {
     width: 25vw;
+    z-index: -10;
 }
 
 #design-icon {
     scale: 1;
+    margin-right: 30vw;
+}
+
+#coding-icon{
+    margin-left: 30vw;
 }
 
 .what-we-do p {
-    display: none;
+    width: 70%;
+    font-size: 3vh;
+    visibility: hidden;
+}
+
+.struct{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+}
+
+#design{
+    margin-left: 50vw;
+}
+
+#build{
+    margin-left: 25vw;
 }
 
 /* WHAT WE DO ANIMATED VERSION CLASSES */
 
+@keyframes p-animate{
+    0%{visibility: hidden;}
+    100%{visibility: visible;}
+}
 
-.design-icon-after, .coding-icon-after {
-    scale: 0.8 !important;
-    filter: blur(3px);
-    position: relative;
-    z-index: -10;
+@keyframes h1-animate {
+    0%{font-weight: 900; font-size: 15vh;}
+    100%{position: relative; font-size: 8vh; margin-bottom: 2vh; margin-left: 0;}
+}
+
+@keyframes coding-icon-animate{
+    0%{width: 25vw;}
+    100%{transform: rotate(30deg); scale: 0.8; filter: blur(3px); position: relative; margin-left: 50vw;}
+}
+
+@keyframes design-icon-animate{
+    0%{width: 25vw;}
+    100%{transform: rotate(-30deg); scale: 0.8; filter: blur(3px); margin-right: 50vw; position: relative;}
 }
 
 .what-we-do-after {
@@ -501,33 +535,31 @@ nav img{
 }
 
 .design-icon-after {
-    transform: rotate(-30deg);
-    margin-right: 50vw;
+    animation: design-icon-animate 2s forwards;
 }
 
 .coding-icon-after {
-    transform: rotate(30deg);
-    margin-left: 50vw;
+    animation: coding-icon-animate 2s forwards;
 }
 
 .h1-after-animation {
-    position: relative;
-    font-size: 8vh !important;
-    margin-bottom: 2vh;
+    animation: h1-animate 2s forwards;
 }
 
 .p-after-animate {
-    display: block !important;
-    width: 70%;
-    font-size: 3vh;
+    animation: p-animate 2s forwards;
 }
 
 .after-animate-struct {
-    position: absolute;
+    transition:  ease-in-out 1s;
     margin-left: 30vw;
+    width: 69vw;
+    height: 39vh;
 }
 
 purple {
     color: #8019E8;
     font-weight: bold;
 }
+
+

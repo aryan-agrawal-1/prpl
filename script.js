@@ -136,10 +136,10 @@ const observer2 = new IntersectionObserver(entries => {
       if (entry.isIntersecting) {
         setTimeout(function() {
             for (let i = 0; i < 2; i++) {
-                whatWeDo[i].classList.add('what-we-do-after');
                 struct[i].classList.add('after-animate-struct');
                 title[i].classList.add('h1-after-animation');
                 para[i].classList.add('p-after-animate');
+                whatWeDo[i].classList.add('what-we-do-after');
             }
             designIcon.classList.add('design-icon-after');
             codingIcon.classList.add('coding-icon-after');
