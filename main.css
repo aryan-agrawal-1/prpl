@@ -161,16 +161,17 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
+    height: 40vw;
 }
 
 .imgBig{
-    height: 67vh;
+    height: 39vw;
+    width: 60vw;
 }
 
 .imgBig:hover{
     cursor: pointer;
-    height: 68vh;
+    width: 62vw;
 }
 
 .imgSmall{
@@ -227,6 +228,11 @@ body {
 
 .workSection span{
     margin-top: 5vh;
+}
+
+.workSection .text{
+    width: 20vw;
+    display: none;
 }
 
 #images{

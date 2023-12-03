@@ -5,6 +5,7 @@ function openModal(id){
     document.getElementById(id + 'img').style.display = "none";
     document.getElementById(id).style.display = "block";
     document.getElementById(id + "p").style.display = "block";
+    document.getElementById(id + "text").style.display = "block";
     document.getElementById(id + "heading").style.display = "block";
     document.getElementById(id + "Border").style.borderRadius = "3.8vh";
     document.getElementById(id + "Border").style.borderWidth = "5px 5px 5px 5px";
@@ -22,6 +23,7 @@ function closeModal(id){
     document.getElementById(id + "Border").style.transition = "0s";
     document.getElementById(id + "Close").style.transition = "0s";
     document.getElementById(id + 'img').style.display = "inline";
+    document.getElementById(id + "text").style.display = "none";
     document.getElementById(id).style.display = "flex";
     document.getElementById(id + "p").style.display = "none";
     document.getElementById(id + "heading").style.display = "none";
