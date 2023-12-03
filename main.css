@@ -17,11 +17,6 @@
     /* May be worth adding these so we have full control */
 }
 
-html{
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
 
 a {
     text-decoration: none;
@@ -64,13 +59,18 @@ a {
 
 
 /* Background styling */
-body {
-    background-color: #121212;
-    background-image: url("images/background.png");
+
+
+body{
+    background-color: #000000;
+    display: flex;
+    height: 97vh;
+    align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     background-attachment: fixed;
-   }
+}
 
 /* tagline styling */
 #tagline{
@@ -569,4 +569,23 @@ purple {
     font-weight: bold;
 }
 
+
+/* styling for intro */
+/* tagline styling */
+#content{
+    display: none;
+}
+
+#introLine{
+    transition: none;
+    background: linear-gradient(180deg, #8019E8 0%, #121212 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 220px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
