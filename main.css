@@ -1,3 +1,11 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
 *{
     font-family: Inter;
     overflow-x: hidden;
@@ -23,6 +31,7 @@ a {
 
 .button:hover, a:hover {
     scale: 1.2;
+    cursor: pointer;
 }
 
 .button:active, a:active {
@@ -311,7 +320,7 @@ nav{
     padding-bottom: 0.5vh;
 }
 
-nav a{
+nav .right{
     color: #FFF;
     font-family: Inter;
     font-size: 2.5vh;
@@ -329,15 +338,9 @@ nav a:hover{
     opacity: 1;
 }
 
-nav p{
+nav img{
     display: inline;
-    font-weight: 500;
-    font-size: 4.5vh;
-    background: linear-gradient(179deg, #8019E8 0.96%, rgba(128, 25, 232, 0.00) 111.32%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: normal;
+    height: 5vh;
     line-height: normal;
     margin-left: 1vw;
     }
@@ -441,46 +444,90 @@ nav p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     scroll-snap-align: start;
 }
 
 #about-us > h1 {
-    font-size: 10vh;
+    font-size: 20vh;
     text-align: center;
     font-weight: bold;
-    margin-top: 10vh;
-    height: 25vh;
+    color: #8019E8;
+    margin: 0;
+    font-weight: 900;
 }
 
 .what-we-do {
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 40vh;
     width: 80vw;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0vh 20vw 0vh 20vw;
     align-items: center;
     text-align: left;
     gap: 5vw;
 }
 
-.what-we-do > p {
-    font-weight: bold;
-    font-size: 1.8vh;
+.what-we-do  h1 {
+    font-weight: 900;
+    font-size: 15vh;
 }
 
-.what-we-do > img {
-    scale: 0.5;
-    filter: brightness(0) invert(1);
-    margin-left: 10vw;
+.what-we-do img {
+    width: 25vw;
 }
 
 #design-icon {
     scale: 1;
-    margin-left: 0;
-    margin-right: 10vw;
 }
 
-#what-we-do-2 {
-    flex-direction: row-reverse;
+.what-we-do p {
+    display: none;
+}
+
+/* WHAT WE DO ANIMATED VERSION CLASSES */
+
+
+.design-icon-after, .coding-icon-after {
+    scale: 0.8 !important;
+    filter: blur(3px);
+    position: relative;
+    z-index: -10;
+}
+
+.what-we-do-after {
+    gap: 0 !important;
+}
+
+.design-icon-after {
+    transform: rotate(-30deg);
+    margin-right: 50vw;
+}
+
+.coding-icon-after {
+    transform: rotate(30deg);
+    margin-left: 50vw;
+}
+
+.h1-after-animation {
+    position: relative;
+    font-size: 8vh !important;
+    margin-bottom: 2vh;
+}
+
+.p-after-animate {
+    display: block !important;
+    width: 70%;
+    font-size: 3vh;
+}
+
+.after-animate-struct {
+    position: absolute;
+    margin-left: 30vw;
+}
+
+purple {
+    color: #8019E8;
+    font-weight: bold;
 }
