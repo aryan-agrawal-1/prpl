@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-Regular.woff2")
+  }
+
+  @font-face {
+    font-family: "InterBold";
+    src: url("fonts/Inter-Black.woff2")
+  }
+
+
+
 :root {
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
@@ -461,7 +473,7 @@ nav img{
     font-weight: bold;
     color: #8019E8;
     margin: 0;
-    font-weight: 900;
+    font-family: InterBold !important;
 }
 
 .what-we-do {
@@ -479,6 +491,7 @@ nav img{
 .what-we-do  h1 {
     font-weight: 900;
     font-size: 15vh;
+    font-family: InterBold !important;
 }
 
 .what-we-do img {
@@ -542,19 +555,19 @@ nav img{
 }
 
 .design-icon-after {
-    animation: design-icon-animate 2s forwards;
+    animation: design-icon-animate 1s forwards;
 }
 
 .coding-icon-after {
-    animation: coding-icon-animate 2s forwards;
+    animation: coding-icon-animate 1s forwards;
 }
 
 .h1-after-animation {
-    animation: h1-animate 2s forwards;
+    animation: h1-animate 1s forwards;
 }
 
 .p-after-animate {
-    animation: p-animate 2s forwards;
+    animation: p-animate 1s forwards;
 }
 
 .after-animate-struct {
