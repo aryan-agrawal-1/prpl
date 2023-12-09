@@ -669,6 +669,7 @@ purple {
     .button{
         width: 40vw;
         height: 10vw;
+        font-size: 3vh;
     }
 
     nav #menu{
