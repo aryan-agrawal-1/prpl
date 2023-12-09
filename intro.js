@@ -13,13 +13,12 @@ function second(){
 function thrid(){
     document.getElementById("introLine").innerHTML = "BOLD";
     document.getElementById("introLine").style.fontSize = "33.8vw";
-    // document.getElementById("background").style.backgroundImage = "url('./Images/welcomeBackground.png')";
     setTimeout(movePage, 2000);
 };
 
 function movePage(){
     document.getElementById("background").style.backgroundColor = "#121212";
-    document.getElementById("background").style.backgroundImage = 'url("images/background.png")';
+    document.getElementById("background").style.backgroundImage = 'url("./Images/background.png")';
     document.getElementById("background").style.backgroundRepeat = 'no-repeat';
     document.getElementById("background").style.backgroundSize = '100% 100%';
     document.getElementById("background").style.backgroundAttachment = 'fixed';
