@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Helvetica", "sans-serif";
+  color: #ffffffdc;
+}
+
+@font-face {
+    font-family: "Druk";
+    src: url(../Fonts/Druk-Wide-Bold.ttf);
+}
+
+h1 
+{
+    font-family: druk;
+    letter-spacing: -0.05em;
+    font-size: 9vh;
+    transition: all 0.7s ease-in-out;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#home
+{
+  color: #ffffffdc;
+  transition: all 0.3s ease-in-out;
+}
+
+#home:hover
+{
+    color: white;
+}
+
+h1:hover
+{
+    letter-spacing: 0.2em;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background: #1f162c;
+  background: linear-gradient(346deg, #1f162c 0%, #000000 50%, #1f162c 100%);
+}
+
+#form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login-modal, #signup-modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #171717;
+    background-image: linear-gradient(346deg, #080808, #1d1d1d);
+    border-radius: 2vh;
+    box-shadow: 0px 0px 19px -3px #fff;
+    margin-top: 15vh;
+}
+
+#signup-modal 
+{
+  height: 65vh;
+  width: 40vw;
+}
+
+#login-modal
+{
+  height: 60vh;
+  width: 35vw;
+}
+
+#signup-modal > h2, #login-modal > h2{
+    font-size: 7vh;
+}
+
+#signup-modal > h2 {
+  margin-top: 2vh;
+}
+
+#login-modal > h2 {
+  margin-top: 4vh;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  width: 30vw;
+  margin-top: 1.26vh;
+}
+
+.input-box {
+  position: relative;
+  width: 50%;
+  margin: 3vh 0.65vw 1.89vh 0.65vw;
+}
+
+#login-modal > form > .input-box {
+  margin-top: 5vh;
+}
+
+.input-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding-bottom: 5px;
+}
+
+.input-box span {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  font-size: 1.89vh;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+  color: #0088ff;
+  transform: translateY(-21px);
+  font-size: 1.23vh;
+}
+
+.input-box i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #933cb5;
+  overflow: hidden;
+}
+
+.input-box i::before {
+  content: " ";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #0088ff;
+  animation: animate 2s linear infinite;
+  transition: 0.5s;
+}
+
+.input-box input:valid ~ i::before,
+.input-box input:focus ~ i::before {
+  left: 0;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1.3vw;
+  margin-top: 3vh;
+}
+
+#options > input[type=submit]{
+    width: 30%;
+    padding: 1vh 0vh 1vh 0vh;
+    font-size: 2vh;
+    font-weight: bold;
+    background-color: #933cb5;
+    color: white;
+    border: #933cb5 solid 1px;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#options > input[type=submit]:hover
+{
+    transform: scale(1.1, 1.1);
+    box-shadow: 2px 7px 96px -2px #3f00d2;
+}
+
+#options > input[type=submit]:active
+{
+    transform: scale(1.02);
+    box-shadow: 1px 4px 10px -2px #3f00d2;
+}
+
+#options {
+    display: flex;
+    margin-left: 0.65vw;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.redirect {
+    margin-left: 7vh;
+    margin-top: 1vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+}
+
+.redirect:hover {
+    color: #ffffff;
+}
+
+.error {
+  margin-left: 0.65vw;
+  color: #ff0000;
+}

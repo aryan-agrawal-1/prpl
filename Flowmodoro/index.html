@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="script.js"></script>
+  <title>Flowmodoro</title>
+</head>
+
+<body>
+  <div id="hero-box">
+    <nav id="navbar" data-aos="slide-down" data-aos-duration="2000">
+      <ul>
+        <li>
+          <a href="index.html">Flowmodoro</a>
+        </li>
+        <div id="nav-right">
+          <li>
+            <a href="login.html" onclick="slideIndexOut()">Log In</a>
+          </li>
+          <li>
+            <a href="signup.html" onclick="slideIndexOut()">Sign Up</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <main data-aos="slide-right" data-aos-duration="2000">
+      <h1>FLOWMODORO</h1>
+      <h2>Maximise your efficiency by entering a state of <i>flow</i></h2>
+      <h3>Using flowmodoro will redefine the way you work by adjusting your study time to fit in with your own focus levels.</h3>
+      <button onclick="slideIndexOut()"><a href="signup.html"><b>Enter Your Flow →</b></a></button>
+    </main>
+    <a id="scroll-down" href="#flow" onclick="incEltNbr(); fadeOnClick();" >↓</a>
+
+    <p class="scroll-desc">Next Section</p>
+  </div>
+
+  <hr id="flow">
+
+  <div id="increase" data-aos="fade-up" data-aos-duration="2000">
+      <h2> Increase your productivity by </h2>
+      <h1 id="counter">500%</h1>
+      <a href="https://www.forbes.com/sites/stevenkotler/2014/01/08/the-research-is-in-a-four-letter-word-that-starts-with-f-is-the-real-secret-to-ultimate-human-performance/?sh=1477697c227f" id="study-link" target="_blank">McKinsey study</a>
+      <a id="scroll-down" href="#short-desc">↓</a>
+      <p class="scroll-desc">Next Section</p>
+    </div>
+
+  <div id="short-desc" data-aos="fade-right" data-aos-duration="2000">
+    <h2>Flowmodoro allows for flexibility and customization so your focus times are tailored to you.</h2>
+    <a id="scroll-down" href="#hero-box">↑</a>
+    <p class="scroll-desc">Back To Top</p>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/loginSignup.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="form-wrapper" data-aos="zoom-in">
+        <h1>FLOWMODORO</h1>
+        <a href="index.html" id="home">Back to landing page</a>
+            <div id="signup-modal">
+                <h2>SIGN UP</h2>
+                <form id='signup-form' action="./includes/sign_up.inc.html" method="post" autocomplete="off">
+
+                    <div class="input-box sign-up-box">
+                        <input type="text" name="name" required>
+                        <span>Name</span>
+                        <i></i>
+                    </div>
+                    
+                    
+
+                    <div class="input-box sign-up-box">
+                        <input type="text" name="mail" id="email-field" onkeyup="validateEmail()" required>
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <p id="email-error" class="error"></p>
+
+                    <div class="input-box sign-up-box">
+                        <input type="password" name="password" id="pass" onkeyup="passwordLength()" required>
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <p id="length-error" class="error"></p>
+
+                    <div class="input-box sign-up-box">
+                        <input type="password" name="confirm-password" id="check-pass" onkeyup="passwordMatch()" required>
+                        <span>Confirm Password</span>
+                        <i></i>
+                    </div>
+                    <p id="pass-error" class="error"></p>
+
+                    <div id="options">
+                    <input type="submit" name="submit" placeholder="Submit">
+                    <a href="login.html" class="redirect">Already have an account?</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+
+</html>
