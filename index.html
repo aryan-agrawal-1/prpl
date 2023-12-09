@@ -21,11 +21,22 @@
 
     <content id="content">
         <nav>
-            <a href="index.html"><img src="./Images/logo.svg"></a>
-            <a href="#contact-us" class="right">Contact Us</a>
-            <a href="#about-us" class="right">About Us</a>
-            <a href="#ourWork" class="right">Our Work</a>
+            <a href="index.html"><img id="logo" src="./Images/logo.svg"></a>
+            <a href="#contact-us" class="right navAnchor">Contact Us</a>
+            <a href="#about-us" class="right navAnchor">About Us</a>
+            <a href="#ourWork" class="right navAnchor">Our Work</a>
+            <img id="menu" class="right" src="./Images/menu.png" onclick="openMenu()"></img>
         </nav>
+
+
+        <modal id="modal">
+            <img id="close" class="right" src="./Images/closeButton.png" onclick="closeMenu()"></img>
+            <span>
+                <a href="#ourWorkMedia" class="modalAnchor" onclick="closeMenu()">Our Work</a>
+                <a href="#about-us-Media" class="modalAnchor" onclick="closeMenu()">About Us</a>
+                <a href="#contact-us" class="modalAnchor" onclick="closeMenu()">Contact Us</a>
+            </span>
+        </modal>
 
         <section id="hero-box">
             <h1 id="title" class="typewrite" data-period="5000" data-type='[ "prpl", "prpl.design", "design", ":)", "prpl.design", "innovate", "Be BOLD", "Be YOU"]'></h1>
@@ -60,7 +71,7 @@
                 <img class="imgBig" id="flowmodoroimg" src="Images/flowmodoro.png" onclick="openModal('flowmodoro')">
                 <div id="images">
                     <img class="imgSmall" id="flowmodoroimgSmall" src="Images/flowmodoro.png">
-                    <a href="www.flowmodoro.com"><img class="visit" id="flowmodorovisit" src="Images/visit_web.png"></a>
+                    <a href="./Flowmodoro/index.html"><img class="visit" id="flowmodorovisit" src="Images/visit_web.png"></a>
                 </div>
                 <span id="flowmodorotext" class="text">
                     <h1 id="flowmodoroheading">Flowmodoro</h1>
@@ -69,6 +80,23 @@
                 <span id="flowmodoroClose" class="material-symbols-outlined close" onclick="closeModal('flowmodoro')">close</span>
             </div>
         </div>
+
+        </main>
+
+        <main id="ourWorkMedia">
+            <div class="ourWorkMediaBox">
+                <a href="https://www.m-coach.co.uk/"><img src="Images/m-coach.png"></a>
+                <p id="click">Click for more</p>
+                <h3>M-Coach</h3>
+                <p class="ourWorkMediaP">We designed a website that highlights Mark's expertise and experience and to move potential clients into his inbox. We worked alongside Mark to create a site which fitted his personality and told his own story.<br>This site was completely designed by us in collaboration with mark. We also carried out the implementation of this site.</p>
+            </div> 
+
+            <div class="ourWorkMediaBox">
+                <a href="./Flowmodoro/index.html"><img src="Images/flowmodoro.png"></a>
+                <p id="click">Click for more (This site may not work on your device)</p>
+                <h3>Flowmodoro</h3>
+                <p class="ourWorkMediaP">Flowmodoro is a pure design project built by us in order to showcase our skils. It is fully designed and built by us using HTML, CSS and JavaScript. In building this we were able to learn all about implementing complex animations so we can implement any design. </p>
+            </div> 
 
         </main>
 
@@ -90,6 +118,24 @@
                     <img src="./Images/coding-icon.png" id="coding-icon">
             </div>
         </section>
+
+        <!-- WHAT WE DO MEDIA QUERY -->
+
+        <section id="about-us-Media">
+            <span>
+            <img src="./Images/design-icon.png">
+            <h1 id="Designh1" class="section-title">Design</h1>
+            <h1 id="andh1">&</h1>
+            <h1 id="Buildh1" class="section-title">Build</h1>
+            <img src="./Images/coding-icon.png">
+            </span>
+            <p>We're all about creating a website for <purple>you.</purple> We're crafting an online personality that's as cool and unique as your business. Get ready to stand out like never before! Once the design phase is a wrap, we're kicking it into high gear to breathe life into that vision. It's not just a website; it's your brand, and we're making it <purple>impossible to ignore!</p>
+        </section>
+
+
+
+
+
 
         <section id="contact-us">
             <h3><i>Book a call, send a DM, or even just an email!</i></h3>

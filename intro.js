@@ -12,8 +12,8 @@ function second(){
 
 function thrid(){
     document.getElementById("introLine").innerHTML = "BOLD";
-    document.getElementById("introLine").style.fontSize = "500px";
-    document.getElementById("background").style.backgroundImage = "url('./Images/welcomeBackground.png')";
+    document.getElementById("introLine").style.fontSize = "33.8vw";
+    // document.getElementById("background").style.backgroundImage = "url('./Images/welcomeBackground.png')";
     setTimeout(movePage, 2000);
 };
 

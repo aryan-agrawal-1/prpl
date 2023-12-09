@@ -80,7 +80,7 @@ body{
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: 100%, 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -99,7 +99,7 @@ body{
 /* button styling */
 .button {
     width: 14.8vw;
-    height: 6.56vh;
+    height: 3.69vw;
     border-radius: 2.12vh;
     background: #8019E8;
     border: transparent 0px solid;
@@ -118,9 +118,6 @@ body{
 
 }
 
-.button:hover {
-    box-shadow: #fff 0 0 20px 3px;
-}
 
 .button:active {
     box-shadow: none;
@@ -205,7 +202,6 @@ body{
 
 .workSection p{
     margin-top: 12vh;
-    width: 25vw;
     height: 38.2vh;
     font-size: 1.9vh;
     font-style: normal;
@@ -277,6 +273,17 @@ body{
     opacity: 1;
 }
 
+#ourWorkMedia{
+    display: none;
+}
+
+#ourWorkMedia img{
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Socials styling */
 
 #socials{
@@ -324,6 +331,44 @@ body{
     align-items: center;
 }
 
+/* modal styling */
+modal{
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    width: 110vw;
+    left: 0;
+    background-image: url("./Images/hiddenBackground.png");
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+modal img{
+    width: 3vw;
+    margin-left: 80vw;
+    margin-top: 15vh;
+}
+
+
+modal span{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 100vw;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalAnchor{
+    margin-bottom: 10vh;
+}
+
 
 
 /* Navbar styling */
@@ -356,12 +401,19 @@ nav a:hover{
     opacity: 1;
 }
 
-nav img{
+nav #logo{
     display: inline;
     height: 5vh;
     line-height: normal;
     margin-left: 1vw;
-    }
+}  
+
+nav #menu{
+    float: right;
+    margin-right: 8vw;
+    margin-top: 1vh;
+    display: none;
+}
 
 
 /* Contact us styling */
@@ -390,12 +442,11 @@ nav img{
 
 #our-images img{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 11.69vw;
 }
 
 #our-images p{
-    width: 15vw;
+    width: 25vw;
     color: #ffffffc4;
     text-align: center;
 }
@@ -435,7 +486,6 @@ nav img{
 
 #contact-buttons button:hover {
     scale: 1.02;
-    box-shadow: #fff 0 0 8px 2px;
 }
 
 #contact-buttons a {
@@ -465,6 +515,10 @@ nav img{
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
+}
+
+#about-us-Media{
+    display: none;
 }
 
 #about-us > h1 {
@@ -596,9 +650,132 @@ purple {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Inter;
-    font-size: 220px;
+    font-size: 20vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+
+@media (max-width: 800px){
+    #hero-box{
+        margin-top: 25vh;
+    }
+
+    .navAnchor,#scroll, #socials, #ourWork, #about-us{
+        display: none;
+    }
+
+    .button{
+        width: 40vw;
+        height: 10vw;
+    }
+
+    nav #menu{
+        display: block;
+    }
+
+    #ourWorkMedia{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourWorkMediaBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15vh;
+    }
+
+    .ourWorkMediaP{
+        font-size: 1.5vh;
+        text-align: justify;
+        width: 75vw;
+    }
+
+    .ourWorkMediaBox #click{
+        font-size: 1vh;
+    }
+
+    #about-us-Media{
+        display: flex;
+        flex-direction: column;
+    }
+    #about-us-Media span{
+        margin-top: 10vh;
+        display: flex;
+    }
+
+    #about-us-Media img{
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        z-index: -2;
+    }
+
+    #about-us-Media h1{
+        position: absolute;
+        font-family: InterBold;
+    }
+
+    #about-us-Media #Designh1{
+        left: 20vw;
+    }
+
+    #about-us-Media #andh1{
+    left: 40vw;
+    margin-top: 8vh;
+    font-size: 8vh;
+    }
+
+    #about-us-Media #Buildh1{
+    left: 55vw;
+    margin-top: 18vh;
+    }
+
+    #about-us-Media p{
+    margin-top: 10vh;
+    text-align: justify;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #our-images img{
+        width: 40vw;
+    }
+
+    #contact-us{
+        height: 200vh;
+    }
+
+    #our-images{
+        flex-direction: column;
+    }
+
+    #contact-us h3{
+        width: 80vw;
+    }
+
+    #contact-us i{
+        width: 80vw;
+        display: block;
+    }
+
+    #contact-us .button, #contact-buttons a{
+        width:40vw;
+    }
+
+    #contact-socials a{
+        margin: 10vw;
+    }
+
+    #contact-socials{
+        width: 100vw;
+    }
+    
+    #our-images p{
+        width: 75vw;
+    }
 }
 

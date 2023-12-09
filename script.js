@@ -36,6 +36,20 @@ function closeModal(id){
 }
 
 
+// opens menu modal
+function openMenu(){
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("html").style.overflow = "hidden";
+
+}
+
+function closeMenu(){
+    document.getElementById("html").style.overflow = "scroll";
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+}
+
 
 // Typewriting effect for the title
 var TxtType = function(el, toRotate, period) {
