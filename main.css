@@ -170,7 +170,7 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    height: 40vw;
+    height: 60vh;
 }
 
 .imgBig{
@@ -201,7 +201,6 @@ body{
 }
 
 .workSection p{
-    margin-top: 12vh;
     height: 38.2vh;
     font-size: 1.9vh;
     font-style: normal;
@@ -657,7 +656,7 @@ purple {
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 1024px) and (orientation: portrait){
     #hero-box{
         margin-top: 25vh;
     }
