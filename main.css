@@ -256,7 +256,7 @@ body{
 }
 
 .visit:hover{
-    height: 27vh;
+    height: 23vh;
     margin-top: 4vh;
     opacity: 075;
 }
@@ -692,10 +692,13 @@ purple {
         font-size: 1.5vh;
         text-align: justify;
         width: 75vw;
+        font-size: 2vh;
+        font-family: InterBold !important;
     }
 
     .ourWorkMediaBox #click{
         font-size: 1vh;
+        font-family: Inter;
     }
 
     #about-us-Media{
@@ -720,6 +723,7 @@ purple {
 
     #about-us-Media #Designh1{
         left: 20vw;
+        font-size: 4vh;
     }
 
     #about-us-Media #andh1{
@@ -731,6 +735,7 @@ purple {
     #about-us-Media #Buildh1{
     left: 55vw;
     margin-top: 18vh;
+    font-size: 4vh;
     }
 
     #about-us-Media p{
