@@ -140,40 +140,40 @@ observer.observe(document.querySelector('#mcoachBorder'));
 
 
 
-const observer2 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const whatWeDo = entry.target.querySelectorAll('.what-we-do');
-      const struct = entry.target.querySelectorAll('.struct');
-      const title = entry.target.querySelectorAll('.section-title');
-      const para = entry.target.querySelectorAll('.section-para');
-      const codingIcon = entry.target.querySelector('#coding-icon');
-      const designIcon = entry.target.querySelector('#design-icon');
+// const observer2 = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//       const whatWeDo = entry.target.querySelectorAll('.what-we-do');
+//       const struct = entry.target.querySelectorAll('.struct');
+//       const title = entry.target.querySelectorAll('.section-title');
+//       const para = entry.target.querySelectorAll('.section-para');
+//       const codingIcon = entry.target.querySelector('#coding-icon');
+//       const designIcon = entry.target.querySelector('#design-icon');
   
-      if (entry.isIntersecting) {
-        setTimeout(function() {
-            for (let i = 0; i < 2; i++) {
-                struct[i].classList.add('after-animate-struct');
-                title[i].classList.add('h1-after-animation');
-                para[i].classList.add('p-after-animate');
-                whatWeDo[i].classList.add('what-we-do-after');
-            }
-            designIcon.classList.add('design-icon-after');
-            codingIcon.classList.add('coding-icon-after');
-            return; // if we added the class, exit the function
-        }, 300)
-      }
+//       if (entry.isIntersecting) {
+//         setTimeout(function() {
+//             for (let i = 0; i < 2; i++) {
+//                 struct[i].classList.add('after-animate-struct');
+//                 title[i].classList.add('h1-after-animation');
+//                 para[i].classList.add('p-after-animate');
+//                 whatWeDo[i].classList.add('what-we-do-after');
+//             }
+//             designIcon.classList.add('design-icon-after');
+//             codingIcon.classList.add('coding-icon-after');
+//             return; // if we added the class, exit the function
+//         }, 300)
+//       }
   
-      // We're not intersecting, so remove the class!
-      for (let i = 0; i < 2; i++) {
-        whatWeDo[i].classList.remove('what-we-do-after');
-        struct[i].classList.remove('after-animate-struct');
-        title[i].classList.remove('h1-after-animation');
-        para[i].classList.remove('p-after-animate');
-      }
+//       // We're not intersecting, so remove the class!
+//       for (let i = 0; i < 2; i++) {
+//         whatWeDo[i].classList.remove('what-we-do-after');
+//         struct[i].classList.remove('after-animate-struct');
+//         title[i].classList.remove('h1-after-animation');
+//         para[i].classList.remove('p-after-animate');
+//       }
 
-      codingIcon.classList.remove('coding-icon-after');
-      designIcon.classList.remove('design-icon-after');
-    });
-  });
+//       codingIcon.classList.remove('coding-icon-after');
+//       designIcon.classList.remove('design-icon-after');
+//     });
+//   });
   
-  observer2.observe(document.querySelector('#about-us'));
+//   observer2.observe(document.querySelector('#about-us'));

@@ -539,12 +539,16 @@ nav #menu{
     align-items: center;
     text-align: left;
     gap: 5vw;
+    gap: 0 !important;
 }
 
 .what-we-do  h1 {
-    font-weight: 900;
-    font-size: 15vh;
+    /* font-weight: 900;
+    font-size: 15vh; */
     font-family: InterBold !important;
+    position: relative; 
+    font-size: 8vh; margin-bottom: 2vh;
+     margin-left: 0;
 }
 
 .what-we-do img {
@@ -553,59 +557,73 @@ nav #menu{
 }
 
 #design-icon {
-    scale: 1;
-    margin-right: 30vw;
+    /* scale: 1; */
+    /* margin-right: 30vw; */
+    transform: rotate(-30deg); 
+    scale: 0.8; 
+    filter: blur(3px); 
+    margin-right: 50vw; 
+    position: relative;
 }
 
 #coding-icon{
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
+    transform: rotate(30deg);
+     scale: 0.8; filter: blur(3px); 
+     position: relative; 
+     margin-left: 50vw;
+     
 }
 
 .what-we-do p {
     width: 70%;
     font-size: 3vh;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .struct{
     width: 100vw;
     height: 40vh;
     position: absolute;
+    transition:  ease-in-out 1s;
+    margin-left: 30vw;
+    width: 69vw;
+    height: 39vh;
 }
 
-#design{
+/* #design{
     margin-left: 50vw;
 }
 
 #build{
     margin-left: 25vw;
-}
+} */
 
 /* WHAT WE DO ANIMATED VERSION CLASSES */
 
-@keyframes p-animate{
+/* @keyframes p-animate{
     0%{visibility: hidden;}
     100%{visibility: visible;}
-}
+} */
 
-@keyframes h1-animate {
+/* @keyframes h1-animate {
     0%{font-weight: 900; font-size: 15vh;}
     100%{position: relative; font-size: 8vh; margin-bottom: 2vh; margin-left: 0;}
-}
+} */
 
-@keyframes coding-icon-animate{
+/* @keyframes coding-icon-animate{
     0%{width: 25vw;}
     100%{transform: rotate(30deg); scale: 0.8; filter: blur(3px); position: relative; margin-left: 50vw;}
-}
+} */
 
-@keyframes design-icon-animate{
+/* @keyframes design-icon-animate{
     0%{width: 25vw;}
     100%{transform: rotate(-30deg); scale: 0.8; filter: blur(3px); margin-right: 50vw; position: relative;}
-}
+} */
 
-.what-we-do-after {
+/* .what-we-do-after {
     gap: 0 !important;
-}
+} */
 
 .design-icon-after {
     animation: design-icon-animate 1s forwards;
