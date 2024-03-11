@@ -1,3 +1,4 @@
 RewriteEngine on
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+Redirect 301 https://www.prpl.design/index.html https://www.prpl.design/
