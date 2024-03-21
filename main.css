@@ -32,12 +32,11 @@
 
 a {
     text-decoration: none;
-    transition: 0.3s all ease-in-out;
-
+    transition: 0.1s all ease-in-out;
 }
 
 .button:hover, a:hover {
-    scale: 1.2;
+    scale: 1.01;
     cursor: pointer;
 }
 
@@ -98,18 +97,21 @@ body{
 
 /* button styling */
 .button {
-    width: 14.8vw;
-    height: 3.69vw;
+    width: 13vw;
+    height: 3vw;
     border-radius: 2.12vh;
     background: #8019E8;
     border: transparent 0px solid;
-    font-size: 3.17vh;
+    font-size: 2.5vh;
     font-weight: 600;
     line-height: 3.8vh;
     color: #fff;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     transition: 0.3s all ease-in-out;
 }
 
@@ -123,6 +125,19 @@ body{
     box-shadow: none;
 }
 
+.aWidth1{
+    width: 14vw;
+    display: contents;
+}
+
+.aWidth1:hover{
+    scale: 1.03;
+}
+
+
+#contact-us .aWidth1{
+    margin-bottom: 3vh;
+}
 
 
 /* scroll hint styling */
@@ -467,30 +482,6 @@ nav #menu{
     align-items: center;
 }
 
-#contact-buttons {
-    display: flex;
-    gap: 4vw;
-}
-
-#contact-buttons button {
-    height: 5vh;
-    width: 10vw;
-    font-size: 2.3vh;
-    margin-bottom: 4vh;
-    margin-top: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-buttons button:hover {
-    scale: 1.02;
-}
-
-#contact-buttons a {
-    width: 15vw;
-}
-
 #contact-socials {
     display: flex;
     align-items: center;
@@ -591,39 +582,6 @@ nav #menu{
     height: 39vh;
 }
 
-/* #design{
-    margin-left: 50vw;
-}
-
-#build{
-    margin-left: 25vw;
-} */
-
-/* WHAT WE DO ANIMATED VERSION CLASSES */
-
-/* @keyframes p-animate{
-    0%{visibility: hidden;}
-    100%{visibility: visible;}
-} */
-
-/* @keyframes h1-animate {
-    0%{font-weight: 900; font-size: 15vh;}
-    100%{position: relative; font-size: 8vh; margin-bottom: 2vh; margin-left: 0;}
-} */
-
-/* @keyframes coding-icon-animate{
-    0%{width: 25vw;}
-    100%{transform: rotate(30deg); scale: 0.8; filter: blur(3px); position: relative; margin-left: 50vw;}
-} */
-
-/* @keyframes design-icon-animate{
-    0%{width: 25vw;}
-    100%{transform: rotate(-30deg); scale: 0.8; filter: blur(3px); margin-right: 50vw; position: relative;}
-} */
-
-/* .what-we-do-after {
-    gap: 0 !important;
-} */
 
 .design-icon-after {
     animation: design-icon-animate 1s forwards;
@@ -677,6 +635,7 @@ purple {
 @media (max-width: 1024px) and (orientation: portrait){
     #hero-box{
         margin-top: 25vh;
+        height: 55vh;
     }
 
     .navAnchor,#scroll, #socials, #ourWork, #about-us{
@@ -770,6 +729,7 @@ purple {
 
     #contact-us{
         height: 200vh;
+        margin-top: -20vh;
     }
 
     #our-images{
@@ -783,10 +743,6 @@ purple {
     #contact-us i{
         width: 80vw;
         display: block;
-    }
-
-    #contact-us .button, #contact-buttons a{
-        width:40vw;
     }
 
     #contact-socials a{
