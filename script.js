@@ -137,6 +137,7 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('#flowmodoroBorder'));
 observer.observe(document.querySelector('#mcoachBorder'));
+observer.observe(document.querySelector('#predictorfyBorder'));
 
 
 
